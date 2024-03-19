@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
  
 /* Computation end point. */
-router.get('/computation', function(req, res, next) {
+router.get('/', function(req, res, next) {
   const randomNumber = Math.floor(Math.random() * 100) + 1;
  
   const x = req.query.x ? parseFloat(req.query.x) : randomNumber;
